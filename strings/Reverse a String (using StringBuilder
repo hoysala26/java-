@@ -1,0 +1,8 @@
+public class ReverseWithStringBuilder {
+    public static void main(String[] args) {
+        String original = "hello";
+        StringBuilder sb = new StringBuilder(original);
+        sb.reverse();
+        System.out.println("Reversed String: " + sb.toString());
+    }
+}
