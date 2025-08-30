@@ -1,23 +1,26 @@
-import java.util.*;
+public class hello {
+    public static void main(String[] args) {
+        String name = "programming";
+        String result = "";
 
+        for (int i = 0; i < name.length(); i++) {
+            char ch = name.charAt(i);
 
-public class Strings {
-   public static void main(String args[]) {
-     Scanner sc = new Scanner (System.in);
-     String email = sc.next();
-     String userName = "";
+            // check if this char is already in result
+            boolean found = false;
+            for (int j = 0; j < result.length(); j++) {
+                if (result.charAt(j) == ch) {
+                    found = true;
+                    break;
+                }
+            }
 
+            // if not found, add to result
+            if (!found) {
+                result += ch;
+            }
+        }
 
-     for(int i=0; i<email.length(); i++) {
-       if(email.charAt(i) == '@') {
-        break;
-       } else {
-         userName += email.charAt(i);
-       }
-     }
-
-
-     System.out.println(userName);
-   }
+        System.out.println(result);
+    }
 }
-
