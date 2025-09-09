@@ -11,7 +11,6 @@ public class Duplicatecha {
                     break;
                 }
             }
-            // if not found, add to result
             if (!found) {
                 result += ch;
             }
