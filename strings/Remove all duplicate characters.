@@ -2,11 +2,8 @@ public class Duplicatecha {
     public static void main(String[] args) {
         String name = "programming";
         String result = "";
-
         for (int i = 0; i < name.length(); i++) {
             char ch = name.charAt(i);
-
-            // check if this char is already in result
             boolean found = false;
             for (int j = 0; j < name.length(); j++) {
                 if (result.charAt(j) == ch) {
@@ -14,13 +11,11 @@ public class Duplicatecha {
                     break;
                 }
             }
-
             // if not found, add to result
             if (!found) {
                 result += ch;
             }
         }
-
         System.out.println(result);
     }
 }
