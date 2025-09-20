@@ -1,0 +1,53 @@
+class MyThread1 extends Thread {
+    @Override
+    public void run() {
+        int i=0;
+        while(i<100){
+        System.out.println("qqqqqqqqqq");
+        i++;
+        }
+    }
+}
+class MyThread2 extends Thread {
+    @Override
+    public void run() {
+         int i=0;
+        while(i<100){
+        System.out.println("66666666666");
+        i++;
+        }
+    }
+}
+class MyThread3 extends Thread {
+    @Override
+    public void run() {
+         int i=0;
+        while(i<100){
+        System.out.println("33333333");
+        i++;
+        }
+    }
+}
+class MyThread4 extends Thread {
+    @Override
+    public void run() {
+         int i=0;
+        while(i<100){
+        System.out.println("==============");
+        i++;
+        }
+    }
+}
+public class Demo {
+    public static void main(String[] args) {
+        MyThread1 t1 = new MyThread1();  
+        MyThread2 t2 = new MyThread2();  
+        MyThread3 t3 = new MyThread3();  
+        MyThread4 t4 = new MyThread4();  
+        t1.start();
+        t2.start();
+        t3.start();
+        t4.start();
+         
+    }
+}
